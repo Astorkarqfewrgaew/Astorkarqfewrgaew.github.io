@@ -150,6 +150,7 @@
  
         CreateRow();
         n = fruits.length - 1;
+        fruits.sort(function( b, a ) {return b - a});
         for (var i = n; i >= 0; i--) {
           var z = document.createElement('TD');
           var t = document.createTextNode(fruits[i]);
